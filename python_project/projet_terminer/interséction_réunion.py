@@ -6,7 +6,7 @@ def intersection():
     c = int(input("entrer l'intervalle => "))
     d = int(input())
     intervalle_2 = list(range(c,d+1))    
-    reponse = list(set(intervalle_1)&set(intervalle_2))
+    reponse = sorted(list(set(intervalle_1)&set(intervalle_2)))
     n = len(reponse)
     for i in range(1,n-1):
         e = 1
